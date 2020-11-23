@@ -1,0 +1,28 @@
+{
+  "name": "meetup_obs_overlay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "dev": "webpack --config webpack.config.js serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brooks-builds/meetup_obs_overlay.git"
+  },
+  "author": "Brooks Patton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brooks-builds/meetup_obs_overlay/issues"
+  },
+  "homepage": "https://github.com/brooks-builds/meetup_obs_overlay#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^6.3.2",
+    "cypress": "^5.6.0",
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

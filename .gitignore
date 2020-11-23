@@ -1,2 +1,5 @@
 /target
 Cargo.lock
+
+www/dist
+www/node_modules
