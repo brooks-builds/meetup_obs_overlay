@@ -1,0 +1,17 @@
+[package]
+name = "meetup_obs_overlay"
+version = "0.1.0"
+authors = ["Brooks Patton <brooks@brookzerker.com>"]
+edition = "2018"
+
+[dependencies]
+wasm-bindgen = "0.2.68"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[profile.release]
+opt-level = "s"
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
