@@ -4,8 +4,10 @@
   font-size: 18pt;
 }
 
-body {
+body,
+html {
   background-color: black;
+  height: 100vh;
 }
 
 section.top {
@@ -13,9 +15,12 @@ section.top {
   justify-content: flex-end;
 }
 
-section.top p {
-  align-items: flex-end;
-}
+/* .bottom {
+  display: flex;
+  align-items: end;
+  height: 100%;
+  justify-content: space-around;
+} */
 
 .info {
   padding: 0.3rem;
