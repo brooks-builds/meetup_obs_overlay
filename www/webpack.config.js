@@ -17,5 +17,13 @@ module.exports = {
   },
   experiments: {
       syncWebAssembly: true
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      }
+    ]
   }
 };

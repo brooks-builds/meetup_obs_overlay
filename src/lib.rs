@@ -1,4 +1,5 @@
 use wasm_bindgen::prelude::*;
+use web_sys::{console, window};
 
 #[wasm_bindgen]
 pub fn init_panic_hook() {
@@ -6,9 +7,13 @@ pub fn init_panic_hook() {
 }
 
 #[wasm_bindgen]
-pub fn run() -> String {
+pub fn run(meetup_title: &str) {
     init_panic_hook();
-    "meostarstw".to_owned()
+    let window = window().expect("could not find window");
+    let document = window.document().unwrap();
+    let meetup_title_element = document.query_selector("#meetup-title").unwrap().unwrap();
+    meetup_title_element.set_inner_html(meetup_title);
+    console::log_1(&meetup_title_element);
 }
 
 #[cfg(test)]

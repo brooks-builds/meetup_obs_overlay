@@ -26,6 +26,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "meetup-obs-overlay": "file:../pkg"
+    "css-loader": "^5.0.1",
+    "meetup-obs-overlay": "file:../pkg",
+    "style-loader": "^2.0.0"
   }
 }

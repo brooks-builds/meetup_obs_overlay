@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18pt;
+}
+
+body {
+  background-color: black;
+}
+
+section.top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+section.top p {
+  align-items: flex-end;
+}
+
+.info {
+  padding: 0.3rem;
+  background-color: thistle;
+}
