@@ -5,13 +5,16 @@ authors = ["Brooks Patton <brooks@brookzerker.com>"]
 edition = "2018"
 
 [dependencies]
+console_error_panic_hook = "0.1.6"
 wasm-bindgen = "0.2.68"
+web-sys = "0.3.45"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
 
 [profile.release]
 opt-level = "s"
+debug = true
 
 [package.metadata.wasm-pack.profile.release]
 wasm-opt = false

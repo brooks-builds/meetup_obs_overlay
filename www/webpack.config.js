@@ -10,9 +10,12 @@ module.exports = {
   },
   mode: "development",
   plugins: [
-      new HtmlWebpackPlugin({template: './index.html'}),
+      new HtmlWebpackPlugin({template: 'index.html'}),
   ],
   devServer: {
       liveReload: true
   },
+  experiments: {
+      syncWebAssembly: true
+  }
 };
