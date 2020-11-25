@@ -4,21 +4,8 @@
   font-size: 18pt;
 }
 
-body,
-html {
-  background-color: black;
-  height: 100vh;
-}
-
 section.top {
   display: flex;
-  justify-content: flex-end;
-}
-
-.bottom {
-  display: flex;
-  align-items: end;
-  height: 100%;
   justify-content: space-between;
 }
 
@@ -29,20 +16,4 @@ section.top {
 
 .hidden {
   opacity: 0%;
-}
-
-.popup {
-  animation: popup 10s linear 0s 1;
-}
-
-@keyframes popup {
-  0%,
-  100% {
-    opacity: 0;
-  }
-
-  10%,
-  90% {
-    opacity: 1;
-  }
 }
