@@ -26,3 +26,23 @@ section.top {
   padding: 0.3rem;
   background-color: thistle;
 }
+
+.hidden {
+  opacity: 0%;
+}
+
+.popup {
+  animation: popup 10s linear 0s 1;
+}
+
+@keyframes popup {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  10%,
+  90% {
+    opacity: 1;
+  }
+}
